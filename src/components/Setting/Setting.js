@@ -10,12 +10,14 @@ function Setting(props) {
                     src="arrow-up-solid.svg"
                     alt={`Increase ${props.category}`}
                     width="16px"
+                    onClick={() => props.changeLength(props.category, 1)}
                 />
                 <div>{props.length}</div>
                 <img
                     src="arrow-down-solid.svg"
                     alt={`Decrease ${props.category}`}
                     width="16px"
+                    onClick={() => props.changeLength(props.category, -1)}
                 />
             </div>
         </div>
