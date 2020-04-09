@@ -1,0 +1,39 @@
+:root {
+    --app-red: #FF4E50;
+    --app-white: whitesmoke;
+    --transitions: background-color .3s, color .3s;
+}
+
+.red-stuff {
+    color: var(--app-red);
+    transition: var(--transitions);
+}
+
+.red-stuff .clock {
+    border: solid 2px var(--app-red);
+}
+
+.red-stuff img {
+    filter: invert(29%) sepia(72%) saturate(2204%) hue-rotate(337deg) brightness(128%) contrast(100%);
+}
+
+.red-background {
+    background-color: var(--app-red);
+}
+
+.white-stuff {
+    color: var(--app-white);
+    transition: var(--transitions);
+}
+
+.white-stuff .clock {
+    border: solid 2px var(--app-white);
+}
+
+.white-stuff img {
+    filter: invert(99%) sepia(34%) saturate(80%) hue-rotate(266deg) brightness(113%) contrast(92%);
+}
+
+.white-background {
+    background-color: var(--app-white);
+}

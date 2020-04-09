@@ -1,0 +1,27 @@
+.setting {
+    --dial-size: 1.5rem;
+    font-size: calc(.75 * var(--dial-size));
+}
+
+.setting img {
+    width: var(--dial-size);
+    transition: opacity .3s;
+}
+
+.setting > .dials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.setting > .dials > * {
+    margin: .3rem;
+}
+
+.setting > .dials > div {
+    font-weight: 500;
+    font-size: var(--dial-size);
+    text-align: center;
+    width: var(--dial-size);
+}

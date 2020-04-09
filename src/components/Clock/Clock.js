@@ -9,8 +9,8 @@ function Clock(props) {
     };
     return (
         <div className="clock">
-            <div>{props.mode}</div>
-            <div>{formatToMinutes(props.seconds)}</div>
+            <div className="mode">{props.mode}</div>
+            <div className="time">{formatToMinutes(props.seconds)}</div>
         </div>
     );
 }

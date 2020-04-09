@@ -3,6 +3,7 @@ import Setting from '../Setting/Setting.js';
 import Clock from '../Clock/Clock.js';
 import Button from '../Button/Button.js';
 import './App.css';
+import './colors.css';
 
 class App extends React.Component {
     constructor() {
@@ -88,18 +89,22 @@ class App extends React.Component {
     }
 
     render() {
+        const styleClasses = this.state.mode === 'Session' ? "white-stuff red-background" : "red-stuff white-background";
+
         return (
-            <div className="app-container">
+            <div className={`app-container ${styleClasses}`}>
                 <h1>Pomodoro Clock</h1>
                 <div className="settings">
                     <Setting
                         category="Break"
                         length={this.state.breakLength}
+                        paused={this.state.paused}
                         changeLength={this.changeLength}
                     />
                     <Setting
                         category="Session"
                         length={this.state.sessionLength}
+                        paused={this.state.paused}
                         changeLength={this.changeLength}
                     />
                 </div>

@@ -1,0 +1,17 @@
+.clock {
+    --time-size: 3rem;
+    padding: 3rem 5rem;
+    border-radius: 2rem;
+    font-size: calc(var(--time-size) / 2);
+}
+
+.clock > .mode {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.clock > .time {
+    font-weight: 350;
+    font-size: 3rem;
+    width: 125px;
+}

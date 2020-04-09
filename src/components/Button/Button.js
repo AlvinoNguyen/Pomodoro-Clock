@@ -7,7 +7,7 @@ function Button(props) {
             src={props.src}
             alt={props.alt}
             onClick={props.activateButton}
-            width="16px"/>
+        />
     );
 }
 
