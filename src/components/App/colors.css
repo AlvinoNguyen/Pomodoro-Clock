@@ -1,6 +1,7 @@
 :root {
     --app-red: #FF4E50;
     --app-white: whitesmoke;
+    --app-blue: #3284BF;
     --transitions: background-color .3s, color .3s;
 }
 
@@ -15,6 +16,11 @@
 
 .red-stuff img {
     filter: invert(29%) sepia(72%) saturate(2204%) hue-rotate(337deg) brightness(128%) contrast(100%);
+}
+
+.red-stuff::selection {
+    background: var(--app-white);
+    color: var(--app-red);
 }
 
 .red-background {
@@ -32,6 +38,11 @@
 
 .white-stuff img {
     filter: invert(99%) sepia(34%) saturate(80%) hue-rotate(266deg) brightness(113%) contrast(92%);
+}
+
+h1::selection, div::selection {
+    background: var(--app-blue);
+    color: var(--app-white);
 }
 
 .white-background {
